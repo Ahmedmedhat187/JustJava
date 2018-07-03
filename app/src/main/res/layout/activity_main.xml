@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    tools:context="com.example.android.justjava.MainActivity">
+
+    <EditText
+        android:id="@+id/edittext_name"
+        android:hint="Name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/HeaderText"
+        android:text="Toppings" />
+
+    <CheckBox
+        android:id="@+id/checkbox_wipped_cream"
+        android:paddingLeft="16dp"
+        android:text="Wipped Cream"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <CheckBox
+        android:id="@+id/checkbox_chocolate"
+        android:paddingLeft="16dp"
+        android:text="Chocolate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/HeaderText"
+        android:text="quantity" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btn_minus"
+            android:text="-"
+            android:layout_width="48dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/quantity_tv"
+            android:padding="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="#000"
+            android:text="1" />
+        <Button
+            android:id="@+id/btn_plus"
+            android:text="+"
+            android:layout_width="48dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/HeaderText"
+            android:text="price" />
+
+        <TextView
+            android:layout_marginLeft="15dp"
+            android:id="@+id/price_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="#000"
+            android:text="$" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:padding="15dp"
+        android:text="ORDER"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:src="@drawable/coffee"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>
